@@ -2,10 +2,8 @@ language: node_js
 node_js:
 - "12.18.2"
 script:
-- echo "Deploying!"
-- npm install
 - npm run build
 install:
 - npm install -g firebase-tools
 after_success:
-- firebase deploy --token 1//0dwNsjYunf8ywCgYIARAAGA0SNgF-L9Ir0LjI6zDE89bqYuJDtOnKh8yvU3kBw37gbDyLf7lMZLv2hcEFg7xMNPbwKqfU-Xme6A
+- firebase deploy --token $FIREBASE_TOKEN
