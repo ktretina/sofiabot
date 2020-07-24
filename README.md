@@ -15,8 +15,6 @@ npm install
 # start local server @ localhost:8080
 npm run dev
 ```
-### Tutorial
-
 ### License
 
 ```
