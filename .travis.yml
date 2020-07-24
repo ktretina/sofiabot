@@ -3,7 +3,7 @@ node_js:
 - "v12.18.2"
 script:
 - echo "Deploying!"
-- npm install
+- npm run build
 install:
 - npm install -g firebase-tools
 after_success:
