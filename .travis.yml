@@ -1,10 +1,10 @@
 language: node_js
 node_js:
 - "12.18.2"
+install:
+- npm install -g firebase-tools
 script:
 - npm rebuild node-sass
 - npm run build
-install:
-- npm install -g firebase-tools
 after_success:
 - firebase deploy --token $FIREBASE_TOKEN
